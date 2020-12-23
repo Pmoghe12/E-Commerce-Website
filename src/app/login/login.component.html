@@ -1,0 +1,37 @@
+
+<form #myform="ngForm" (submit)="loginClicked(myform)">
+
+        <div class="row">
+
+            <div class="col-lg-4"></div>
+            
+                <div class="col-lg-4 centerDiv">
+                    <div class="form-group text-center">
+                        <img src="assets/nc.png" width="150" height="150" alt="">
+                    </div>
+                    <div class="form-group">
+                        <label for="">User Email</label>
+                        <input class="form-control" type="email" name="email" ngModel placeholder="Enter Your Email" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="">User Password</label>
+                        <input class="form-control" type="password" name="password" ngModel placeholder="Enter Your Password" id="password">
+                    </div>
+                    <div class="form-group text-center">
+                        <button type="submit" class="btn btn-primary">
+                            Login
+                        </button>
+                
+                        <a routerLink="/register" class="btn btn-warning btmr">
+                            Register
+                        </a>
+
+                    </div>
+
+            
+        
+            </div>
+            <div class="col-lg-4"></div>
+
+        </div>
+</form>
